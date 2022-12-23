@@ -1,25 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { ContadorComponent } from './contador/contador.component';
 import { TiranitarComponent } from './Tierra/Tiranitar/tiranitar.component';
 import { ButtonModule} from 'primeng/button';
 import { TrampinchComponent } from './Tierra/trampinch/trampinch.component';
-import { RfcComponent } from './Generador/rfc/rfc.component';
+import { GeneradorModule } from './Generador/generador.module';
+import { ContadorModule } from './contador/contador.module';
+import { TorterraComponent } from './Tierra/torterra/torterra.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent,
     TiranitarComponent,
     TrampinchComponent,
-    RfcComponent,
+    TorterraComponent,
   ],
   imports: [
     BrowserModule,
-    ButtonModule
+    ButtonModule,
+    GeneradorModule,
+    ContadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
