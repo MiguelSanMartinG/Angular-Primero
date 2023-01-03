@@ -1,1 +1,34 @@
-<h1>Torterra</h1>
+<div class="grid">
+    <div class="col">
+<h1> El pokemon bonsai </h1>
+
+<hr>
+
+
+
+
+        <ul>
+            <li>Bonsly</li>
+            <li>Torterra</li>
+            <li>Sudowodo</li>
+            
+        </ul>
+    </div>
+    <div class="col">
+        <h1>Agregar</h1>
+        <hr>
+        <!-- al poner ngmodel con corchetes y parentesis, el elemento recibe como emite eventos. -->
+        <form (ngSubmit)="agregar()">
+            <input type= "text" placeholder="Nombre" name="nombre"
+            [(ngModel)] = "nuevo.nombre" > 
+            <input type="number" placeholder="Poder" name="numero"
+            [ngModel]= "nuevo.numero">
+            <button type="submit">
+                Agregar
+            </button>
+        </form>
+      
+    </div>
+</div> 
+<!--<input type="number" placeholder="Poder" 
+            [value]="nuevo.numero">  -->

@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Mob {
+  nombre: string;
+  numero :string;
+}
+
 @Component({
   selector: 'app-torterra',
   templateUrl: './torterra.component.html',
-  styleUrls: ['./torterra.component.css']
+  styleUrls: ['../../../../node_modules/primeflex/primeflex.css']
 })
 export class TorterraComponent implements OnInit {
 
@@ -11,5 +16,13 @@ export class TorterraComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  nuevo: Mob = {
+    nombre: 'efec',
+    numero: '0'
+}
 
+  agregar(){
+    console.log(this.nuevo);
+  }
+  
 }

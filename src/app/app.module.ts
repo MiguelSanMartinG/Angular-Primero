@@ -7,7 +7,8 @@ import { TrampinchComponent } from './Tierra/trampinch/trampinch.component';
 import { GeneradorModule } from './Generador/generador.module';
 import { ContadorModule } from './contador/contador.module';
 import { TorterraComponent } from './Tierra/torterra/torterra.component';
-
+import {TableModule} from 'primeng/table';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,9 @@ import { TorterraComponent } from './Tierra/torterra/torterra.component';
     BrowserModule,
     ButtonModule,
     GeneradorModule,
-    ContadorModule
+    ContadorModule,
+    TableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
