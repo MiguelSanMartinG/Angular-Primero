@@ -9,6 +9,7 @@ import { ContadorModule } from './contador/contador.module';
 import { TorterraComponent } from './Tierra/torterra/torterra.component';
 import {TableModule} from 'primeng/table';
 import { FormsModule } from '@angular/forms';
+import { PersonajesComponent } from './Tierra/personajes/personajes.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     TiranitarComponent,
     TrampinchComponent,
     TorterraComponent,
+    PersonajesComponent,
   ],
   imports: [
     BrowserModule,

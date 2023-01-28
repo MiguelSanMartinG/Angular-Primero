@@ -1,22 +1,15 @@
 <br>
 <img src="assets\Trapinch.png" width="100px" height="100px">
-
-
 <ul>
-
-    <li *ngFor='let movimiento of movimientos'>{{movimiento}}</li>
-
+  <li *ngFor='let movimiento of movimientos'>{{movimiento}}</li>
 </ul>
 
 <div>
-
-    <div *ngIf="bandera" else noBorrado>
-        borrados:
-    </div> 
-
-    <ng-template #noBorrado> Comentario </ng-template>
-
-    <li *ngFor='let borrados of borrados'>{{borrados}}</li>
+  <div *ngIf="bandera" else noBorrado>
+    borrados:
+  </div>
+  <ng-template #noBorrado> Comentario </ng-template>
+  <li *ngFor='let borrados of borrados'>{{borrados}}</li>
 
 </div>
 
