@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Mob } from '../Interfaces/mob.interface';
 
-interface Mob {
-  nombre: string;
-  numero :string;
-}
+
 
 @Component({
   selector: 'app-torterra',

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Mob } from '../Interfaces/mob.interface';
 
 @Component({
   selector: 'app-personajes',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PersonajesComponent implements OnInit {
 
-  @Input() personajes : any[] = [];
+  @Input() personajes : Mob[] = [];
   constructor() { }
 
   ngOnInit(): void {
